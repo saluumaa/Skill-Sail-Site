@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.featured-teachers {
+  height: 100vh;
+  display: block;
+}
+
+.featured-teachers h2 {
+  text-align: center;
+  font-size: 23px;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.feature-line {
+  width: 40px;
+  height: 2px;
+  background-color: #ec5242;
+  margin-left: 47%;
+  margin-top: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding-top: 20px;
+}
+
+.teacher-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.teacher-img {
+  position: relative;
+  width: 100px;
+}
+
+.overlay-one {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.right-content {
+  padding-top: 60px;
+  padding-left: 10px;
+}
+
+.right-content h5 {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 400;
+}
+
+hr {
+  width: 25px;
+  height: 4px;
+  border: 1px solid black;
+}
+
+.see-more {
+  margin-top: 50px;
+  font-size: 17px;
+  padding: 8px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+button.hide {
+  display: none;
+}
+
+.chevron {
+  color: #ec5242;
+  padding-left: 7px;
+}
+
+.desk-featured-speaker {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-teachers {
+    display: none;
+  }
+
+  .desk-featured-speaker {
+    display: block;
+  }
+
+  .desk-featured-speaker h2 {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .right-content {
+    max-width: 200px;
+  }
+
+  .teacher-wrapper {
+    margin: 10px auto;
+  }
+}
