@@ -78,7 +78,7 @@ Use Terminal:
 ```sh 
 cd my-folder
  
-git clone git@github.com:saluumaa/Saluma-s-Portfolio.git
+git clone git@github.com:saluumaa/skill-sail-site.git
 ```
 ### Install
 
