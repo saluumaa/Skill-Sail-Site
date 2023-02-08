@@ -473,6 +473,10 @@ i.humberger.hide {
     align-self: center;
   }
 
+  .footer-par1 {
+    margin-left: -7rem;
+  }
+
   .partner-text .line {
     display: flex;
     justify-content: center;
