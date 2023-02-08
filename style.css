@@ -162,7 +162,7 @@ i.humberger.hide {
 }
 
 .main {
-  background: url('/assets/hero-bg.png') no-repeat;
+  background: url('assets/hero-bg.png') no-repeat;
   background-size: cover;
   background-position-x: 30%;
   background-position-y: center;
@@ -179,7 +179,7 @@ i.humberger.hide {
 }
 
 .intro-text h1 {
-  background: url('/assets/seamless-wood-texture-for-photoshop.jpg') no-repeat center center;
+  background: url('assets/seamless-wood-texture-for-photoshop.jpg') no-repeat center center;
   background-size: 100%;
   color: #ec5242;
   -webkit-text-fill-color: transparent;
@@ -194,7 +194,7 @@ i.humberger.hide {
 
 .intro-text span {
   font-size: 80px;
-  background: url('/assets/back.png');
+  background: url('assets/back.png');
   line-height: 80px;
   color: transparent;
   background-position: 0 0;
