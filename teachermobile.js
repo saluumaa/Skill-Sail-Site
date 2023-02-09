@@ -1,33 +1,39 @@
 const speakers = [
   {
     name: 'Ilhan Muse',
-    image: '/assets/teacher-five-removebg-preview.png',
+    image: 'assets/teacher-five-removebg-preview.png',
     title: 'Lecturer at Amoud University',
     descripe: 'She has been teachin since 2016, her major is IT',
   },
   {
     name: 'Abdale Ali',
-    image: '/assets/teacher-two-removebg-preview.png',
+    image: 'assets/teacher-two-removebg-preview.png',
     title: 'Telesom Company',
     descripe: 'He is a head of the technical department at the Telesom Company',
   },
   {
     name: 'Edil Omer',
-    image: '/assets/teacher-two-removebg-preview (1).png',
-    title: 'Project manager and consultant',
-    descripe: 'Edil works as a project manager and consultant in different companies',
+    image: 'assets/teacher-two-removebg-preview (1).png',
+    title: 'Project manager',
+    descripe: 'she works as a project manager in different companies',
   },
   {
     name: 'Salma Hassan',
-    image: '/assets/teacher-four-removebg-preview.png',
+    image: 'assets/teacher-four-removebg-preview.png',
     title: 'Software Developer',
     descripe: 'Salma is a software developer works with international companies ',
   },
   {
     name: 'Hibak Ahmed',
-    image: '/assets/teacher-one-removebg-preview.png',
+    image: 'assets/teacher-one-removebg-preview.png',
     title: 'Instructor at Amoud University',
     descripe: 'Hibak works as a finance and accounting specialist teacher',
+  },
+  {
+    name: 'Mohamed Ahmed',
+    image: 'assets/teacher-six.jpg',
+    title: 'head of somtel company',
+    descripe: 'he is the manager of the telecommunication section in the company',
   },
 ];
 
@@ -38,7 +44,7 @@ loadMoreBtn.addEventListener('click', () => {
   loadMoreBtn.classList.toggle('hide');
   let speakerCount = 2;
   featuredSpeakers.innerHTML += '';
-  for (let i = speakerCount; i < speakerCount + 5; i += 1) {
+  for (let i = speakerCount; i < speakerCount + 6; i += 1) {
     if (i >= speakers.length) {
       break;
     }
@@ -48,8 +54,8 @@ loadMoreBtn.addEventListener('click', () => {
     speakerDiv.className = 'teacher-wrapper';
     speakerDiv.innerHTML = `
       <div class="teacher-img">
-      <img src="/assets/speaker-back.png" alt="">
-      <img src="${speaker.image}" alt="" class="overlay-one">
+      <img src="assets/speaker-back.png" alt="speakers-back-image">
+      <img src="${speaker.image}" alt="speaker-image" class="overlay-one">
   </div>
   <div class="right-content">
       <h3>${speaker.name}</h3>
@@ -59,7 +65,7 @@ loadMoreBtn.addEventListener('click', () => {
   </div> `;
     featuredSpeakers.appendChild(speakerDiv);
   }
-  speakerCount += 5;
+  speakerCount += 6;
 });
 
 const mainfeature = document.querySelector('.desk-featured-speaker');
@@ -68,7 +74,7 @@ featuredteachers.className = 'container';
 
 let speakerCount = 0;
 featuredteachers.innerHTML += '';
-for (let i = speakerCount; i < speakerCount + 5; i += 1) {
+for (let i = speakerCount; i < speakerCount + 6; i += 1) {
   if (i >= speakers.length) {
     break;
   }
@@ -78,8 +84,8 @@ for (let i = speakerCount; i < speakerCount + 5; i += 1) {
   teacherDiv.className = 'teacher-wrapper';
   teacherDiv.innerHTML = `
       <div class="teacher-img">
-      <img src="/assets/speaker-back.png" alt="">
-      <img src="${speaker.image}" alt="" class="overlay-one">
+      <img src="assets/speaker-back.png" alt="speakers-back-image">
+      <img src="${speaker.image}" alt="teacher-image" class="overlay-one">
   </div>
   <div class="right-content">
       <h3>${speaker.name}</h3>
@@ -90,4 +96,4 @@ for (let i = speakerCount; i < speakerCount + 5; i += 1) {
   featuredteachers.appendChild(teacherDiv);
   mainfeature.appendChild(featuredteachers);
 }
-speakerCount += 5;
+speakerCount += 6;

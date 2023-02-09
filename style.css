@@ -55,23 +55,21 @@ header a {
 
 .secodary-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
   position: fixed;
-  padding: 18px 24px;
+  padding: 20px 10%;
   top: 30px;
   width: 100%;
-  height: 78px;
-  z-index: 100;
+  height: 72px;
+  z-index: 1;
 }
 
 header .logo {
   color: #ec5242;
   display: none;
-  padding-left: 5%;
-  padding-right: 5rem;
   padding-top: -5px;
   animation: logo 3s ease;
+  margin-right: auto;
 }
 
 @keyframes logo {
@@ -141,6 +139,7 @@ header .logo {
   color: #0009;
   font-weight: 700;
   display: block;
+  margin-left: 0;
   margin-top: -1.2rem;
   z-index: 10;
 }
@@ -162,24 +161,25 @@ i.humberger.hide {
 }
 
 .main {
-  background: url('/assets/hero-bg.png') no-repeat;
+  background: url('assets/hero-bg.png') no-repeat;
   background-size: cover;
   background-position-x: 30%;
   background-position-y: center;
 }
 
 .introduction-page {
-  padding: 19% 5% 7% 5%;
+  padding: 19% 10% 7% 15%;
 }
 
-.intro-text h2 {
+.intro-text .inside {
   color: #ec5242;
-  font-weight: 100;
+  font-size: 25px;
+  font-weight: lighter;
   padding-bottom: 10px;
 }
 
 .intro-text h1 {
-  background: url('/assets/seamless-wood-texture-for-photoshop.jpg') no-repeat center center;
+  background: url('assets/seamless-wood-texture-for-photoshop.jpg') no-repeat center center;
   background-size: 100%;
   color: #ec5242;
   -webkit-text-fill-color: transparent;
@@ -194,7 +194,7 @@ i.humberger.hide {
 
 .intro-text span {
   font-size: 80px;
-  background: url('/assets/back.png');
+  background: url('assets/back.png');
   line-height: 80px;
   color: transparent;
   background-position: 0 0;
@@ -272,7 +272,7 @@ i.humberger.hide {
   transform: scale(1.1);
 }
 
-.p-wrapper h2 {
+.p-wrapper h3 {
   color: #ec5242;
   padding-top: 10px;
   padding-left: 10px;
@@ -334,7 +334,7 @@ i.humberger.hide {
   .nav-bar ul {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
   }
 
   .nav-bar ul li {
@@ -343,10 +343,10 @@ i.humberger.hide {
 
   .nav-bar li a {
     text-decoration: none;
-    color: black;
-    font-size: 15px;
+    color: #272a31;
+    font-size: 18px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-left: 12px;
     line-height: 20px;
     position: relative;
@@ -413,7 +413,7 @@ i.humberger.hide {
     font-size: 13px;
   }
 
-  .p-wrapper h2 {
+  .p-wrapper h3 {
     font-size: 15px;
   }
 
@@ -430,10 +430,11 @@ i.humberger.hide {
 
   .footer-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #d3d3d3;
-    padding: 24px;
+    padding-left: 10rem;
+    padding-right: 10rem;
     padding-top: 50px;
     color: #272a31;
     height: 150px;
@@ -471,6 +472,10 @@ i.humberger.hide {
     color: #d3d3d3;
     text-align: center;
     align-self: center;
+  }
+
+  .footer-par1 {
+    margin-right: auto;
   }
 
   .partner-text .line {

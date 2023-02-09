@@ -22,7 +22,7 @@ body {
 }
 
 .feature-line {
-  width: 40px;
+  width: 45px;
   height: 2px;
   background-color: #ec5242;
   margin-left: 47%;
@@ -32,7 +32,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .teacher-wrapper {
@@ -43,7 +43,6 @@ body {
 
 .teacher-img {
   position: relative;
-  width: 100px;
 }
 
 .overlay-one {
@@ -54,7 +53,7 @@ body {
 }
 
 .right-content {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-left: 10px;
 }
 
@@ -98,6 +97,7 @@ button.hide {
 
   .desk-featured-speaker {
     display: block;
+    margin-bottom: 25px;
   }
 
   .desk-featured-speaker h2 {
@@ -111,10 +111,11 @@ button.hide {
   }
 
   .right-content {
-    max-width: 200px;
+    max-width: 450px;
+    padding-top: 10px;
   }
 
   .teacher-wrapper {
-    margin: 10px auto;
+    margin: 7px auto;
   }
 }
