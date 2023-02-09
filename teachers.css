@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.featured-teachers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+
+.featured-teachers h2 {
+  text-align: center;
+  font-size: 23px;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.feature-line {
+  width: 45px;
+  height: 2px;
+  background-color: #ec5242;
+  margin-left: 47%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.teacher-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.teacher-img {
+  position: relative;
+}
+
+.overlay-one {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.right-content {
+  padding-left: 40px;
+}
+
+.right-content h5 {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 400;
+}
+
+hr {
+  width: 25px;
+  height: 4px;
+  border: 1px solid black;
+}
+
+.see-more {
+  margin: 30px 3rem;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  font-weight: 500;
+}
+
+button.hide {
+  display: none;
+}
+
+.chevron {
+  color: #ec5242;
+  padding-left: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .teacher-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+}
