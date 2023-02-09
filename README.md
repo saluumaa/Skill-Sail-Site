@@ -148,5 +148,5 @@ I would like to thank everyone contributed the completion of this project, espec
 
 
 ## 📝 License <a name="license"></a>
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE.md/) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
