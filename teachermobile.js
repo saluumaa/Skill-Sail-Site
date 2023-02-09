@@ -13,7 +13,7 @@ const speakers = [
   },
   {
     name: 'Edil Omer',
-    image: '/assets/teacher-two-removebg-preview (1).png',
+    image: 'assets/teacher-two-removebg-preview (1).png',
     title: 'Project manager and consultant',
     descripe: 'Edil works as a project manager and consultant in different companies',
   },
