@@ -161,7 +161,7 @@ i.humberger.hide {
 }
 
 .main {
-  background: url('assets/hero-bg.png') no-repeat;
+  background: url('/assets/hero-bg.png') no-repeat;
   background-size: cover;
   background-position-x: 30%;
   background-position-y: center;
@@ -473,11 +473,6 @@ i.humberger.hide {
     text-align: center;
     align-self: center;
   }
-
-  .footer-par1 {
-    margin-right: auto;
-  }
-
   .partner-text .line {
     display: flex;
     justify-content: center;

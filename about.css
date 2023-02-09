@@ -112,7 +112,6 @@ header .logo {
   height: 100vh;
   padding-top: 106px;
   background-color: #ec5242;
-  backdrop-filter: blur(8px);
 }
 
 .nav-bar.active li {

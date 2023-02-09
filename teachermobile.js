@@ -13,9 +13,9 @@ const speakers = [
   },
   {
     name: 'Edil Omer',
-    image: 'assets/teacher-two-removebg-preview (1).png',
-    title: 'Project manager',
-    descripe: 'she works as a project manager in different companies',
+    image: '/assets/teacher-two-removebg-preview (1).png',
+    title: 'Project manager and consultant',
+    descripe: 'Edil works as a project manager and consultant in different companies',
   },
   {
     name: 'Salma Hassan',
@@ -54,8 +54,8 @@ loadMoreBtn.addEventListener('click', () => {
     speakerDiv.className = 'teacher-wrapper';
     speakerDiv.innerHTML = `
       <div class="teacher-img">
-      <img src="assets/speaker-back.png" alt="speakers-back-image">
-      <img src="${speaker.image}" alt="speaker-image" class="overlay-one">
+      <img src="/assets/speaker-back.png" alt="">
+      <img src="${speaker.image}" alt="" class="overlay-one">
   </div>
   <div class="right-content">
       <h3>${speaker.name}</h3>
@@ -84,8 +84,8 @@ for (let i = speakerCount; i < speakerCount + 6; i += 1) {
   teacherDiv.className = 'teacher-wrapper';
   teacherDiv.innerHTML = `
       <div class="teacher-img">
-      <img src="assets/speaker-back.png" alt="speakers-back-image">
-      <img src="${speaker.image}" alt="teacher-image" class="overlay-one">
+      <img src="/assets/speaker-back.png" alt="">
+      <img src="${speaker.image}" alt="" class="overlay-one">
   </div>
   <div class="right-content">
       <h3>${speaker.name}</h3>
