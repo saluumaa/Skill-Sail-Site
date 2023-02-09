@@ -68,7 +68,10 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: 
+In order to run this project you need:
+- **github**
+- **terminal**
+-**Code Editor**
  
 ### Setup
 
@@ -93,7 +96,7 @@ npm install
 
 To run tests, run the following command:
 ```sh 
-Npx hint .   for testing the html file errors
+Npx hint .   
  
 npx stylelint "**/*.{css,scss}"     to check errors for CSS file.
 ```
@@ -139,7 +142,7 @@ Please give a ⭐️ if you like this project
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank everyone contributed the completion of this project, especially thanks to Cindy Shin who is the owner of the original design
+I would like to thank everyone contributed the completion of this project, especially thanks to (<a href="https://www.behance.net/adagio07">Cindy Shin</a>) who is the owner of ther original design<a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
