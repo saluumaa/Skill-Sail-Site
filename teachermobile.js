@@ -40,60 +40,68 @@ const speakers = [
 const loadMoreBtn = document.querySelector('.see-more');
 const featuredSpeakers = document.querySelector('.container');
 
-loadMoreBtn.addEventListener('click', () => {
-  loadMoreBtn.classList.toggle('hide');
-  let speakerCount = 2;
-  featuredSpeakers.innerHTML += '';
-  for (let i = speakerCount; i < speakerCount + 6; i += 1) {
-    if (i >= speakers.length) {
-      break;
-    }
+let speakersShown = 2;
 
-    const speaker = speakers[i];
-    const speakerDiv = document.createElement('section');
-    speakerDiv.className = 'teacher-wrapper';
-    speakerDiv.innerHTML = `
+function createSpeakerCard(speaker) {
+  const card = document.createElement('section');
+  card.classList.add('teacher-wrapper');
+
+  card.innerHTML = `
       <div class="teacher-img">
-      <img src="/assets/speaker-back.png" alt="">
-      <img src="${speaker.image}" alt="" class="overlay-one">
-  </div>
-  <div class="right-content">
-      <h3>${speaker.name}</h3>
-      <h5>${speaker.title}</h5>
-      <hr>
-      <p>${speaker.descripe}</p>
-  </div> `;
-    featuredSpeakers.appendChild(speakerDiv);
+        <img src="/assets/speaker-back.png" alt="Teachers-back">
+        <img src="${speaker.image}" alt="speakers-image" class="overlay-one">
+      </div>
+    <div class="right-content">
+        <h3>${speaker.name}</h3>
+        <h5>${speaker.title}</h5>
+        <hr>
+        <p>${speaker.descripe}</p>
+    </div> `;
+
+  return card;
+}
+
+function showSpeakers() {
+  for (let i = 0; i < featuredSpeakers.children.length; i += 1) {
+    if (i < speakersShown) {
+      featuredSpeakers.children[i].style.display = 'flex';
+    } else {
+      featuredSpeakers.children[i].style.display = 'none';
+    }
   }
-  speakerCount += 6;
+}
+
+for (let i = 0; i < speakers.length; i += 1) {
+  featuredSpeakers.appendChild(createSpeakerCard(speakers[i]));
+}
+
+loadMoreBtn.addEventListener('click', () => {
+  speakersShown += 2;
+  if (speakersShown >= featuredSpeakers.children.length) {
+    loadMoreBtn.style.display = 'none';
+  }
+  showSpeakers();
 });
 
-const mainfeature = document.querySelector('.desk-featured-speaker');
-const featuredteachers = document.createElement('div');
-featuredteachers.className = 'container';
-
-let speakerCount = 0;
-featuredteachers.innerHTML += '';
-for (let i = speakerCount; i < speakerCount + 6; i += 1) {
-  if (i >= speakers.length) {
-    break;
-  }
-
-  const speaker = speakers[i];
-  const teacherDiv = document.createElement('section');
-  teacherDiv.className = 'teacher-wrapper';
-  teacherDiv.innerHTML = `
-      <div class="teacher-img">
-      <img src="/assets/speaker-back.png" alt="">
-      <img src="${speaker.image}" alt="" class="overlay-one">
-  </div>
-  <div class="right-content">
-      <h3>${speaker.name}</h3>
-      <h5>${speaker.title}</h5>
-      <hr>
-      <p>${speaker.descripe}</p>
-  </div> `;
-  featuredteachers.appendChild(teacherDiv);
-  mainfeature.appendChild(featuredteachers);
+if (window.innerWidth < 768) {
+  loadMoreBtn.style.display = 'flex';
+  // speakersShown = speakers.length;
+  speakersShown = 2;
+  showSpeakers();
+} else {
+  loadMoreBtn.style.display = 'none';
+  speakersShown = speakers.length;
+  showSpeakers();
 }
-speakerCount += 6;
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    loadMoreBtn.style.display = 'none';
+    speakersShown = speakers.length;
+    showSpeakers();
+  } else {
+    loadMoreBtn.style.display = 'flex';
+    speakersShown = 2;
+    showSpeakers();
+  }
+});

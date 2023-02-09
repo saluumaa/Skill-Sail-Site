@@ -10,8 +10,10 @@ body {
 }
 
 .featured-teachers {
-  height: 100vh;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
 }
 
 .featured-teachers h2 {
@@ -27,18 +29,14 @@ body {
   background-color: #ec5242;
   margin-left: 47%;
   margin-top: 15px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 100%;
-  padding-top: 10px;
+  margin-bottom: 50px;
 }
 
 .teacher-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  margin-bottom: 20px;
 }
 
 .teacher-img {
@@ -53,8 +51,7 @@ body {
 }
 
 .right-content {
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 .right-content h5 {
@@ -70,11 +67,12 @@ hr {
 }
 
 .see-more {
-  margin-top: 50px;
+  margin: 30px 3rem;
   font-size: 17px;
-  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
   font-weight: 500;
-  margin-bottom: 30px;
 }
 
 button.hide {
@@ -86,36 +84,13 @@ button.hide {
   padding-left: 7px;
 }
 
-.desk-featured-speaker {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .featured-teachers {
-    display: none;
-  }
-
-  .desk-featured-speaker {
-    display: block;
-    margin-bottom: 25px;
-  }
-
-  .desk-featured-speaker h2 {
-    text-align: center;
-    padding-top: 40px;
-  }
-
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
   }
 
-  .right-content {
-    max-width: 450px;
-    padding-top: 10px;
-  }
-
   .teacher-wrapper {
-    margin: 7px auto;
+    grid-template-columns: 50% 50%;
   }
 }

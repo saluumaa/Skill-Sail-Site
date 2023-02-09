@@ -269,7 +269,7 @@ i.humberger.hide {
 }
 
 .color {
-  background-color: #ec524280;
+  background-color: #ec524295;
   position: absolute;
   top: 0;
   left: 0;
@@ -281,6 +281,7 @@ i.humberger.hide {
   padding-top: 40px;
   color: #fff;
   font-weight: 600;
+  font-size: 28px;
 }
 
 footer p {
@@ -292,6 +293,7 @@ footer p {
   font-weight: 500;
   color: #fff;
   padding-top: 15px;
+  font-size: 18px;
 }
 
 .partner {
@@ -322,8 +324,8 @@ footer p {
 
 footer {
   display: flex;
-
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 24px;
   gap: 12px;
