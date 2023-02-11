@@ -48,7 +48,7 @@ function createSpeakerCard(speaker) {
 
   card.innerHTML = `
       <div class="teacher-img">
-        <img src="/assets/speaker-back.png" alt="Teachers-back">
+        <img src="assets/speaker-back.png" alt="Teachers-back">
         <img src="${speaker.image}" alt="speakers-image" class="overlay-one">
       </div>
     <div class="right-content">
