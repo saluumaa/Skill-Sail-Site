@@ -60,7 +60,7 @@ header a {
   padding: 20px 10%;
   top: 30px;
   width: 100%;
-  height: 72px;
+  height: 75px;
   z-index: 1;
 }
 
@@ -108,14 +108,18 @@ header .logo {
 
 .nav-bar.active {
   display: flex;
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: -30px;
+  top: 0;
   width: 100%;
   height: 100vh;
   padding-top: 106px;
-  background-color: #ec524299;
+  text-align: center;
+  background-image: linear-gradient(55deg, #ec5242, #ec5242, #272a31,#ec5242, #ec5242);
+  background-size: 100%;
+  background-repeat: repeat;
   backdrop-filter: blur(8px);
+  transition: left 0.5s;
 }
 
 .nav-bar.active li {
@@ -145,11 +149,12 @@ header .logo {
 }
 
 i.close {
-  font-size: 24px;
+  font-size: 35px;
   color: white;
   display: none;
   cursor: pointer;
   filter: invert(0);
+  margin-top: -25px;
 }
 
 i.close.show {
@@ -179,7 +184,7 @@ i.humberger.hide {
 }
 
 .intro-text h1 {
-  background: url('assets/seamless-wood-texture-for-photoshop.jpg') no-repeat center center;
+  background: url('https://images.pexels.com/photos/13104440/pexels-photo-13104440.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center top;
   background-size: 100%;
   color: #ec5242;
   -webkit-text-fill-color: transparent;
@@ -189,7 +194,7 @@ i.humberger.hide {
   font-weight: 600;
   padding: 0;
   margin: 0;
-  -webkit-text-stroke: 3px #ec5242;
+  -webkit-text-stroke: 2px #ec5242;
 }
 
 .intro-text span {
